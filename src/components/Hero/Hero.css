@@ -1,0 +1,142 @@
+.hero-container {
+    color: #F9E897;
+    /* background-image: url(../../media/heroRightImg.jpg); */
+    /* font-size: 40px; */
+    height: 100vh;
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-left {
+    height: 100%;
+    width: 40%;
+    /* background-color: red; */
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.hero-left-glass {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:3;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(7px);
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.hero-left-glass-content h1 {
+    font-size: 70px;
+    font-weight: normal;
+}
+
+.hero-left-glass-content h3 {
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.hero-left-glass-content p {
+    margin: 18px 0;
+    font-size: 18px;
+}
+
+.hero-left-glass-content a {
+    color: #F9E897;
+    background-color: #B19470;
+    font-size: 22px;
+    padding: 7px 40px;
+    border: none;
+    outline: none;
+    text-shadow: 2px 1px 2px black;
+    box-shadow: 2px 2px 3px black;
+    transition: all 0.2s ease-in;
+}
+
+.hero-left-glass-content a:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+@media screen and (max-width: 1040px) {
+    .hero-left-glass-content h1 {
+        font-size: 64px;
+    }
+    
+    .hero-left-glass-content h3 {
+        font-size: 30px;
+    }
+    
+    .hero-left-glass-content p {
+        font-size: 16px;
+    }
+    
+    .hero-left-glass-content a {
+        font-size: 18px;
+    }
+  }
+
+@media screen and (max-width: 800px) {
+    .hero-container {
+        flex-direction: column-reverse;
+    }
+
+    .hero-container img {
+        height: 350px;
+        width: unset;
+    }
+
+    .hero-left {
+        position: relative;
+        width: 100%;
+        background-color: #1d1d13;
+    }
+
+    .hero-left-glass {
+        align-items: center;
+    }
+
+    .hero-left-glass-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-left-glass-content h1 {
+        font-size: 46px;
+    }
+    
+    .hero-left-glass-content h3 {
+        font-size: 28px;
+    }
+    
+    .hero-left-glass-content p {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .hero-left-glass-content a {
+        font-size: 18px;
+    }
+  }

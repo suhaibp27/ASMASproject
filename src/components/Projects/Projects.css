@@ -1,0 +1,14 @@
+.projects-wrapper {
+    min-height: 50vh;
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+    background-color: #1d1d13;
+    border-bottom: 1px solid white;
+}
+
+.projects-container {
+    height: 100%;
+    padding: 40px;
+    color: white;
+}

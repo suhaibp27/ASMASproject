@@ -1,0 +1,28 @@
+.app {
+  background-color: black;
+}
+
+.title-container {
+  overflow: hidden;
+}
+
+.scroll-to-top.hidden {
+  visibility: hidden;
+}
+
+.scroll-to-top a {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  width: 40px;
+  height: 40px;
+  background-color: #dca70a;
+  border-radius: 20px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 2px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
